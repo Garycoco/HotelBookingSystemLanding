@@ -1,38 +1,51 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  background-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  position: sticky;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 40px;
+  border-radius: 20px;
+  background-color: white;
+  z-index: 1;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav ul .nav-link:nth-child(4) {
+  border: 2px solid;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+nav ul .nav-link:nth-child(4) span {
+  display: block;
+  color: cadetblue;
+}
+nav ul .nav-link:not(:nth-child(4)) {
+  padding: 10px;
+  border-radius: 10px;
+  transition: all .5s ease-in-out;
+  font-weight: 500;
+}
+nav ul .nav-link.active {
+  background-color: rgb(55, 146, 207);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+nav ul .nav-link:not(:nth-child(4)) {
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul .nav-link:not(.active,:nth-child(4)):hover {
+  background-color: rgba(42, 136, 165, 0.555);
+  color: white;
+}
+.hambugger {
+  display: none;
 }

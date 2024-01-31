@@ -1,0 +1,24 @@
+#hero {
+    height: 80svh;
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)), url(../../assets/bg_img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#hero .container {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    padding-block: 40px;
+    position: relative;
+}
+.text-content {
+    position: absolute;
+    display: block;
+    bottom: 20%;
+    text-align: start;
+}
+.text-content p {
+    font-size: clamp(45px, 6vw, 59px);
+    color: white;
+    font-weight: 800;
+}
